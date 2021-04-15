@@ -1,0 +1,57 @@
+<h1>Customer Details</h1>
+<table align="center">
+    <thead>
+        <th>Customer ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Annual Salary</th>
+        <th>Country</th>
+    </thead>
+    <tbody *ngFor="let i of cust">
+        <tr>
+            <td>{{i.custId}}</td>
+            <td>{{i.firstName|titlecase}}</td>
+            <td>{{i.lastName|uppercase}}</td>
+            <td>{{i.birthDate|date:"mediumDate"}}</td>
+            <td>{{i.annualSalary|currency:"USD"}}</td>
+            <td>{{i.country|code|uppercase}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
